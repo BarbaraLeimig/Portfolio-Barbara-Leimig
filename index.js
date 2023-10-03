@@ -18,4 +18,14 @@ $(document).ready(function () {
       navbar.removeClass("active");
     }
   });
+
+  // Mudando a cor do botão quando o cursor estiver sobre o mesmo
+  $(".btn").hover(
+    function () {
+      $(this).css("background-color", "var(--dark-secondary-color)");
+    },
+    function () {
+      $(this).css("background-color", "var(--secondary-color)");
+    }
+  );
 });
